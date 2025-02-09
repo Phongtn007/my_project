@@ -1,9 +1,17 @@
 void main() {
-  List<String> name = ['phong', 'hoang', 'dung', 'vu', 'ngoc'];
-  name.insert(0, 'tuyen');
-  name.removeWhere((name) => name.length < 4);
-  print(name);
-  for (var num in name) {
-    print(num);
-  }
+  Map<String, String> sodienthoai = {
+    'phong': '09374276937',
+    'ngoc': '09327835528',
+    'hoang': '02426976236',
+  };
+  sodienthoai['tuyen'] = '08283562862';
+  sodienthoai['vu'] = '02726583627';
+  sodienthoai.addAll({'dung': '0365852745', 'kien': '05473285485'});
+  sodienthoai.remove('hoang');
+  sodienthoai.forEach(
+    (key, value) {
+      print('$key:$value');
+    },
+  );
+  print(sodienthoai);
 }
