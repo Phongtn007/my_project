@@ -33,9 +33,12 @@ void main() {
         break;
       case '3':
         print('danh sách đã đc sắp xếp');
+        tenhocsinh.sort();
+        print('danh sách đã sắp xếp$tenhocsinh');
         break;
       default:
         print('thoát ra');
+        exit(0);
     }
   }
 }
