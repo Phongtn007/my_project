@@ -34,7 +34,9 @@ void main() {
       case '3':
         print('danh sách đã đc sắp xếp');
         tenhocsinh.sort();
-        print(tenhocsinh);
+        for (var ten in tenhocsinh) {
+          print(ten);
+        }
         break;
       default:
         print('thoát ra');
